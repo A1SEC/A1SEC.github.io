@@ -16,161 +16,357 @@
     <meta property="og:image" content="img/logo.png">
     <meta property="og:url" content="http://www.a1sec.cn">
 
-    <link rel="shortcut icon" href="images/zero.ico">
+    <link rel="shortcut icon" href="./images/zero.ico">
 
 
     <!-- CSS stuff -->
-    <link rel="stylesheet" href="css/animate.min.css">
-    <link rel="stylesheet" href="css/marketing.css">
-    <link rel="stylesheet" href="css/62faa85.css"/>
-    <link rel="stylesheet" href="css/6bf4187.css"/>
+    <link rel="stylesheet" href="./css/animate.min.css">
+    <link rel="stylesheet" href="./css/marketing.css">
+    <link rel="stylesheet" href="./css/62faa85.css" />
+    <link rel="stylesheet" href="./css/6bf4187.css" />
+    <link rel="stylesheet" href="./assets/bootstrap/theme.min.css" />
+    <link rel="stylesheet" href="./assets/fonts/Father/father.css" />
+    <link rel="stylesheet" href="./assets/swiper/swiper.min.css" />
+    <style>
+        
+    .swiper-slide {
+      min-width:200px;
+	  transition: 300ms;
+	  transform: scale(0.7);
+    }
+	.swiper-slide-active,.swiper-slide-duplicate-active{
+      transform: scale(1);
+	}
+    </style>
 </head>
 <div id="app">
-    <nav class="navbar navbar-desktop">
+    <nav class="navbar navbar-light navbar-expand-lg border-bottom mb-3" style="z-index: 2;">
+        <div class="container">
+            <!-- Brand -->
+            <a class="navbar-brand" href="index.html">
+                <img src="./images/logo.png" class="navbar-brand-img" alt="...">
+            </a>
+            <!-- Toggler -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Collapse -->
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="true" aria-label="Toggle navigation">
+                    <i class="fe fe-x"></i>
+                </button>
+                <!-- Navigation -->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/" >首页</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="./xy/wlaqf.txt" >法律专栏</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="./project.html">项目</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="./about.html">关于</a>
+                    </li>
+                </ul>
+    
+            </div>
+        </div>
+
+    </nav>
+    <!-- <nav class="navbar navbar-desktop">
         <div class="container">
             <div class="navbar-wrapper">
                 <a href="http://www.a1sec.cn" class="navbar-brand">
-                    <img src="images/logo.png" alt="A1Sec logo" style="width:350px;height:130px;border:0;">
+                    <img src="./images/logo.png" alt="A1Sec logo" style="width:350px;height:130px;border:0;">
                 </a>
 
                 <ul class="navbar-links">
                     <li><a href="http://www.a1sec.cn">首页</a></li>
-                    <li><a href="http://www.a1sec.cn/wlaqf">法律专栏</a></li>
-                    <li><a href="project.html">项目</a></li>
-                    <li><a href="about.html">关于我们</a></li>
+                    <li><a href="./xy/wlaqf.txt">法律专栏</a></li>
+                    <li><a href="./project.html">项目</a></li>
+                    <li><a href="./about.html">关于我们</a></li>
                     </li>
                 </ul>
             </div>
         </div>
-    </nav>
-
-    <section class="section section-intro">
+    </nav> -->
+    <section>
         <div class="container">
-            <div class="columns  center-v">
-                <div class="column is-7">
-                    <h2 class="title">
-                        describe:
-                        <span> 暗刃（A1 Security Team） </span>
+            <div class="row align-items-center">
+                <div class="col-11 col-md-4 col-lg-5 order-md-2">
+
+                    <!-- Image -->
+                    <img src="./images/1-1.jpg" class="img-fluid mw-md-150 mw-lg-130 mb-6 mb-md-0 aos-init aos-animate ml-8"
+                        alt="..." data-aos="fade-up" data-aos-delay="100">
+
+                </div>
+                <div class="col-13 col-md-8 col-lg-7 order-md-1 aos-init aos-animate" data-aos="fade-up">
+
+                    <!-- Heading -->
+                    <h2 class=" text-center text-md-left">
+                        Welcome to <span class="text-primary">暗刃(A1 Security Team)</span>. <br>
                         始建于2015年，2020重新组建，我们回来了，依旧关注于网络安全。
                     </h2>
-                    <h3 class="subtitle">A1 Security Team, Founded in 2015, reorganized in 2020, we are back, still focused on network security. </h3>
-                    <div class="btn-group">
-                        <a href="http://www.a1sec.cn/wqk" class="btn btn-cta">
-                            A1武器库
-                            <div class="btn-cta-wrapper">
-                                <img src="./images/web.svg">
-                            </div>
+
+                    <!-- Text -->
+                    <p class="lead text-center text-md-left text-muted mb-6 mb-lg-8">
+                        A1 Security Team, Founded in 2015, reorganized in 2020, we are back, still focused on network
+                        security.
+                    </p>
+
+                    <!-- Buttons -->
+                    <div class="text-center text-md-left">
+                        <a href="//wqk.a1sec.cn" target="_blank" class="btn btn-primary shadow lift mr-1">
+                            A1 武器库 <i class="fe fe-box d-none d-md-inline ml-3"></i>
                         </a>
-                        <a href="gfsys.html" class="btn btn-cta">
-                            加入我们
-                            <div class="btn-cta-wrapper">
-                                <img src="./images/right-arrow.svg">
-                            </div>
+                        <a href="./gfsys.html" class="btn btn-primary-soft lift">
+                            加入我们 <i class="fe fe-chevrons-right ml-3"></i>
                         </a>
                     </div>
+
                 </div>
-                <div class="column center is-5">
-                    <div class="image-wrapper">
-                        <img src="images/01.png" width="350px"></div>
-                </div>
-            </div>
-        </div>
+            </div> <!-- / .row -->
+        </div> <!-- / .container -->
     </section>
-    <section class="section section-grey section-featured">
+    <section class=" py-8 bg-light">
         <div class="container">
-            <div class="columns center-v">
-                <div class="column center">
-                    <a href="http://www.a1sec.cn/sheke" target="_blank" rel="noopener noreferrer">
-                        <img src="images/zerosecwiki.png">
+            <div class="row">
+                <div class="col-sm">
+                    <a href="http://www.sec.pet" target="_blank" rel="noopener noreferrer">
+                        <img src="./images/zerosecwiki.png" style="max-height: 136px;">
                     </a>
                 </div>
-                <div class="column center">
-                    <a href="http://www.a1sec.cn/wqk" target="_blank" rel="noopener noreferrer">
-                        <img src="images/pt01.png"></a></div>
-                <div class="column center">
+                <div class="col-sm">
+                    <a href="http://wqk.a1sec.cn" target="_blank" rel="noopener noreferrer">
+                        <img src="./images/pt01.png" style="max-height: 136px;">
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
-   
 
-
-    <section class="section section-testimonials">
-        <div class="container">
-            <h2 class="center"><a href="">团队核心成员，排名顺序不分前后</a></h2>
-
-            <div class="columns carousel-wrapper">
-                <div class="column center carousel">
-                    <a href="#" target="_blank" rel="noopener noreferrer" class="card card-link"><img
-                            src="images/hxcy/001.jpg" alt="A1Sec logo" style="width:100px;height:100px;border:0;">
-                        <h4>h4ck</h4>
-                        <p class="message">团队负责人兼任团队运营。技能描述：web渗透，内网渗透，代码审计</p>
-                    </a></div>
-
-                <div class="column center carousel">
-                    <a href="#" target="_blank" rel="noopener noreferrer" class="card card-link"><img
-                            src="images/hxcy/jys.jpg" alt="A1Sec logo" style="width:100px;height:100px;border:0;">
-                        <h4>静夜思</h4>
-                        <p class="message">团队资料库/武器库运营兼负责人。</p>
-                    </a></div>
-
-                <div class="column center carousel">
-                    <a href="#" target="_blank" rel="noopener noreferrer" class="card card-link"><img
-                            src="images/hxcy/zjun.jpg" alt="A1Sec logo" style="width:100px;height:100px;border:0;">
-                        <h4>ZJUN</h4>
-                        <p class="message">团队核心成员。技能描述：web渗透 内网渗透 python linux php</p>
-                    </a></div>
-
-                <div class="column center carousel">
-                    <a href="#" target="_blank" rel="noopener noreferrer" class="card card-link"><img
-                            src="images/hxcy/wander4.png" alt="A1Sec logo"
-                            style="width:100px;height:100px;border:0;">
-                        <h4>wander4</h4>
-                        <p class="message">团队核心成员。技能描述：10年开发经验，前端全栈。项目：Valine系统开发者</p>
-                    </a></div>
-
-                <div class="column center carousel">
-                    <a href="#" target="_blank" rel="noopener noreferrer" class="card card-link"><img
-                            src="images/hxcy/xiaochen.jpg" alt="A1Sec logo"
-                            style="width:100px;height:100px;border:0;">
-                        <h4>小陈</h4>
-                        <p class="message">团队核心成员。技能描述：web渗透测试，漏洞挖掘</p>
-                    </a></div>
-
-                <div class="column center carousel">
-                    <a href="#" target="_blank" rel="noopener noreferrer" class="card card-link"><img
-                            src="images/hxcy/rmy.jpg" alt="ZeroSec logo" style="width:100px;height:100px;border:0;">
-                        <h4>如沐雨</h4>
-                        <p class="message">团队核心成员。技能描述：5年开发经验，系统开发。项目：极致CMS开发者</p>
-                    </a></div>
-
-                <div class="column center carousel">
-                    <a href="#" target="_blank" rel="noopener noreferrer" class="card card-link"><img
-                            src="images/hxcy/08.jpg" alt="ZeroSec logo" style="width:100px;height:100px;border:0;">
-                        <h4>08道教学派</h4>
-                        <p class="message">团队核心成员。web渗透测试</p>
-                    </a></div>
-
-                <div class="column center carousel">
-                    <a href="#" target="_blank" rel="noopener noreferrer" class="card card-link"><img
-                            src="images/hxcy/adiao.jpg" alt="A1Sec logo" style="width:100px;height:100px;border:0;">
-                        <h4>阿刁</h4>
-                        <p class="message">团队核心成员。技能描述：web渗透 内网渗透 app测试
-应急响应</p>
-                    </a></div>
-            </div>
+    <div class="container pt-10">
+        <div class="row justify-content-center pb-8">
+          <div class="col-12 col-md-10 col-lg-8 text-center">
+            <h2 class="font-weight-bold">
+                团队核心成员
+            </h2>
+            <p class="font-size-lg text-muted mb-7 mb-md-9">
+                排名顺序不分前后
+              </p>
+          </div>
         </div>
-    </section>
+        
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="card card-border border-primary shadow-lg mb-6 mb-md-8 lift lift-lg">
+                        <div class="card-body text-center">
+                            <div class="avatar avatar-xxl mb-5">
+                                <img src="./images/hxcy/001.jpg" alt="..." class="avatar-img rounded-circle">
+                            </div>
+                            <h4 class="font-weight-bold">h4ck</h4>
+                            <p class="text-gray-700">团队负责人兼任团队运营。web渗透，内网渗透，代码审计</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card card-border border-primary shadow-lg mb-6 mb-md-8 lift lift-lg">
+                        <div class="card-body text-center">
+                            <div class="avatar avatar-xxl mb-5">
+                                <img src="./images/hxcy/jys.jpg" alt="..." class="avatar-img rounded-circle">
+                            </div>
+                            <h4 class="font-weight-bold">静夜思</h4>
+                            <p class="text-gray-700">团队资料库/武器库运营兼负责人。</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card card-border border-primary shadow-lg mb-6 mb-md-8 lift lift-lg">
+                        <div class="card-body text-center">
+                            <div class="avatar avatar-xxl mb-5">
+                                <img src="./images/hxcy/zjun.jpg" alt="..." class="avatar-img rounded-circle">
+                            </div>
+                            <h4 class="font-weight-bold">ZJUN</h4>
+                            <p class="text-gray-700">团队核心成员。web渗透 内网渗透 python linux php</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card card-border border-primary shadow-lg mb-6 mb-md-8 lift lift-lg">
+                        <div class="card-body text-center">
+                            <div class="avatar avatar-xxl mb-5">
+                                <img src="./images/hxcy/wander4.png" alt="..." class="avatar-img rounded-circle">
+                            </div>
+                            <h4 class="font-weight-bold">wander4</h4>
+                            <p class="text-gray-700">团队核心成员。10年开发经验，前端全栈。项目：Valine系统</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card card-border border-primary shadow-lg mb-6 mb-md-8 lift lift-lg">
+                        <div class="card-body text-center">
+                            <div class="avatar avatar-xxl mb-5">
+                                <img src="./images/hxcy/xiaochen.jpg" alt="..." class="avatar-img rounded-circle">
+                            </div>
+                            <h4 class="font-weight-bold">小陈</h4>
+                            <p class="text-gray-700">团队核心成员。web渗透测试，漏洞挖掘</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card card-border border-primary shadow-lg mb-6 mb-md-8 lift lift-lg">
+                        <div class="card-body text-center">
+                            <div class="avatar avatar-xxl mb-5">
+                                <img src="./images/hxcy/rmy.jpg" alt="..." class="avatar-img rounded-circle">
+                            </div>
+                            <h4 class="font-weight-bold">如沐雨</h4>
+                            <p class="text-gray-700">团队核心成员。5年开发经验，系统开发, 极致CMS开发者</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card card-border border-primary shadow-lg mb-6 mb-md-8 lift lift-lg">
+                        <div class="card-body text-center">
+                            <div class="avatar avatar-xxl mb-5">
+                                <img src="./images/hxcy/08.jpg" alt="..." class="avatar-img rounded-circle">
+                            </div>
+                            <h4 class="font-weight-bold">08道教学派</h4>
+                            <p class="text-gray-700">团队核心成员。web渗透测试</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card card-border border-primary shadow-lg mb-6 mb-md-8 lift lift-lg">
+                        <div class="card-body text-center">
+                            <div class="avatar avatar-xxl mb-5">
+                                <img src="./images/hxcy/adiao.jpg" alt="..." class="avatar-img rounded-circle">
+                            </div>
+                            <h4 class="font-weight-bold">阿刁</h4>
+                            <p class="text-gray-700">团队核心成员。web渗透 内网渗透 app测试 应急响应</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card card-border border-primary shadow-lg mb-6 mb-md-8 lift lift-lg">
+                        <div class="card-body text-center">
+                            <div class="avatar avatar-xxl mb-5">
+                                <img src="./images/hxcy/U2L.jpg" alt="..." class="avatar-img rounded-circle">
+                            </div>
+                            <h4 class="font-weight-bold">U2L</h4>
+                            <p class="text-gray-700">团队核心成员。Python，网络安全编程，web渗透，沉迷linux内核技术</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card card-border border-primary shadow-lg mb-6 mb-md-8 lift lift-lg">
+                        <div class="card-body text-center">
+                            <div class="avatar avatar-xxl mb-5">
+                                <img src="./images/hxcy/crq.jpg" alt="..." class="avatar-img rounded-circle">
+                            </div>
+                            <h4 class="font-weight-bold">超人强</h4>
+                            <p class="text-gray-700">团队核心成员。web渗透测试，漏洞挖掘，代码审计</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card card-border border-primary shadow-lg mb-6 mb-md-8 lift lift-lg">
+                        <div class="card-body text-center">
+                            <div class="avatar avatar-xxl mb-5">
+                                <img src="./images/hxcy/zql.jpg" alt="..." class="avatar-img rounded-circle">
+                            </div>
+                            <h4 class="font-weight-bold">张起灵</h4>
+                            <p class="text-gray-700">团队核心成员。web渗透 近源渗透 免杀 php 硬件</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card card-border border-primary shadow-lg mb-6 mb-md-8 lift lift-lg">
+                        <div class="card-body text-center">
+                            <div class="avatar avatar-xxl mb-5">
+                                <img src="./images/hxcy/sn.jpg" alt="..." class="avatar-img rounded-circle">
+                            </div>
+                            <h4 class="font-weight-bold">肆年</h4>
+                            <p class="text-gray-700">团队核心成员。运维 web安全 后期 RHCE</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card card-border border-primary shadow-lg mb-6 mb-md-8 lift lift-lg">
+                        <div class="card-body text-center">
+                            <div class="avatar avatar-xxl mb-5">
+                                <img src="./images/hxcy/mask.jpg" alt="..." class="avatar-img rounded-circle">
+                            </div>
+                            <h4 class="font-weight-bold">竹天mask</h4>
+                            <p class="text-gray-700">团队核心成员。技能开发中...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card card-border border-primary shadow-lg mb-6 mb-md-8 lift lift-lg">
+                        <div class="card-body text-center">
+                            <div class="avatar avatar-xxl mb-5">
+                                <img src="./images/hxcy/17.jpg" alt="..." class="avatar-img rounded-circle">
+                            </div>
+                            <h4 class="font-weight-bold">十七</h4>
+                            <p class="text-gray-700">团队核心成员。web渗透测试，php，python，java</p>
+                        </div>
+                    </div>
+                </div>
+              <div class="swiper-slide">
+                    <div class="card card-border border-primary shadow-lg mb-6 mb-md-8 lift lift-lg">
+                        <div class="card-body text-center">
+                            <div class="avatar avatar-xxl mb-5">
+                          <img src="./images/hxcy/cm.jpg" alt="..." class="avatar-img rounded-circle">
+                            </div>
+                            <h4 class="font-weight-bold">蝉鸣</h4>
+                            <p class="text-gray-700">人工智能 深度学习 数据挖掘 前后端全栈 ai安全</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
 </div>
+<section class="py-6 py-md-8 border-bottom">
+    <div class="container">
+        <div class="row align-items-center justify-content-center">
+            <a href="http://www.secbug.org/" title="破晓团队" class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
+                <div class="img-fluid text-gray-600 mb-2 mb-md-0 svg-shim">
+                    <img src="./images/link/secbug.png" alt="">
+                </div>
+            </a>
+            <a href="http://www.0-sec.org/" title="零组" class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
+                <div class="img-fluid text-gray-600 mb-2 mb-md-0 svg-shim">
+                    <img src="./images/link/0-sec.png" alt="">
+                </div>
+            </a>
+            <a href="https://y7yun.cn/" title="SSR-易企云" class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
+                <div class="img-fluid text-gray-600 mb-2 mb-md-0 svg-shim">
+                    <img src="./images/link/y7yun.png" alt="">
+                </div>
+            </a>
+            <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
 
 
+
+            </div>
+        </div> <!-- / .row -->
+    </div> <!-- / .container -->
+</section>
 <footer class="footer">
     <div class="footer-wrapper">
         <div class="container">
             <div class="columns">
                 <div class="column">
                     <div class="footer-brand">
-                        <img src="images/1.jpg">
+                        <img src="./images/1.jpg">
                         <span class="footer-brand-name">暗刃安全团队 Inc.</span>
                     </div>
                     <p class="footer-location">Youth has unlimited possibilities.
@@ -178,17 +374,17 @@
                     <div class="footer-language">
                         <a href="#">Copyright © 2020 A1SEC</a>
                     </div>
-                    
-                        <img src="./images/qq.svg" alt="与官方负责人交谈" title="与官方负责人交谈"></a>
-                        <img border="0" src="./images/qqun.svg" alt="暗刃资料文库T^T" title="暗刃资料文库T^T"></a>
-                    <a target="_blank" href="//">
-                        <img border="0" src="./images/gzh.svg" alt="暗刃资料文库T^T" title="暗刃资料文库T^T"></a>
+                    <a target="_blank" href="#"><img src="./images/qq.svg" alt="与官方负责人交谈" title="与官方负责人交谈"></a>
+                    <a target="_blank" href="#"><img border="0" src="./images/qqun.svg" alt="暗刃资料文库T^T"
+                            title="暗刃资料文库T^T"></a>
+                    <a target="_blank" href="#"><img border="0" src="./images/gzh.svg" alt="暗刃资料文库T^T"
+                            title="暗刃资料文库T^T"></a>
                 </div>
                 <div class="column">
                     <p class="footer-title">平台</p>
                     <ul class="footer-list">
                         <li>
-                            <a href="zerogf.html">暗刃攻防实验室</p>
+                            <a href="./zerogf.html">暗刃攻防实验室</p>
                         </li>
                     </ul>
                 </div>
@@ -197,7 +393,7 @@
                     <p class="footer-title">合作伙伴</p>
                     <ul class="footer-list">
                         <div class="footer-brand">
-                            <img src="images/gat.png">
+                            <img src="./images/gat.png">
                             <a href="#"></a>
                         </div>
                     </ul>
@@ -207,13 +403,10 @@
                     <p class="footer-title">法律条款</p>
                     <ul class="footer-list">
                         <li>
-                            <a href="xy/yhxy.html" target="_blank" rel="noopener noreferrer">用户协议</a>
+                            <a href="xy/yhxy.txt" target="_blank" rel="noopener noreferrer">用户协议</a>
                         </li>
                         <li>
-                            <a href="#" target="_blank" rel="noopener noreferrer">隐私声明</a>
-                        </li>
-                        <li>
-                            <a href="xy/fwtk.html" target="_blank" rel="noopener noreferrer">服务条款</a>
+                            <a href="xy/fwtk.txt" target="_blank" rel="noopener noreferrer">服务条款</a>
                         </li>
                     </ul>
                 </div>
@@ -221,6 +414,27 @@
         </div>
     </div>
 </footer>
+<script src="./assets/js/jquery.min.js"></script>
+<script src="./assets/bootstrap/bootstrap.min.js"></script>
+<script src="./assets/bootstrap/theme.min.js"></script>
+<script src="./assets/swiper/swiper.min.js"></script>
+
+<script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 4,
+      centeredSlides: true,
+      spaceBetween: 0,
+      loop: true,
+      autoplay:{
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
 </body>
 
 </html>
